@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description"
+    content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular." />
+  <!-- Twitter meta-->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:site" content="@pratikborsadiya" />
+  <meta property="twitter:creator" content="@pratikborsadiya" />
+  <!-- Open Graph Meta-->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Vali Admin" />
+  <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme" />
+  <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin" />
+  <meta property="og:image" content="../blog/vali-admin/hero-social.png" />
+  <meta property="og:description"
+    content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular." />
+  <title>Neue Fische Shop - Admin Area</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Main CSS-->
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- Font-icon css-->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body class="app sidebar-mini rtl">
+  <!-- Navbar-->
+  <header class="app-header">
+    <a class="app-header__logo" href="index-2.html">Neue Fische</a>
+    <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+      aria-label="Hide Sidebar"></a>
+    <!-- Navbar Right Menu-->
+    <ul class="app-nav">
+      <!-- User Menu-->
+      <li class="dropdown">
+        <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i
+            class="fa fa-user fa-lg"></i></a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li>
+            <a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <!-- Sidebar menu-->
+  <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+  <aside class="app-sidebar">
+    <ul class="app-menu">
+      <li>
+        <a class="app-menu__item" href="index-2.html"><i class="app-menu__icon fa fa-dashboard"></i><span
+            class="app-menu__label">Dashboard</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item active" href="index-2.html"><i class="app-menu__icon fa fa-cube"></i><span
+            class="app-menu__label">Products</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item" href="index-2.html"><i class="app-menu__icon fa fa-files-o"></i><span
+            class="app-menu__label">Categories</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item" href="index-2.html"><i class="app-menu__icon fa fa-envelope-o"></i><span
+            class="app-menu__label">Orders</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item" href="index-2.html"><i class="app-menu__icon fa fa-user-o"></i><span
+            class="app-menu__label">Users</span></a>
+      </li>
+    </ul>
+  </aside>
+  <main class="app-content">
+    <div class="app-title">
+      <div>
+        <h1>Products</h1>
+      </div>
+      <ul class="app-breadcrumb breadcrumb side">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item">Products</li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tile">
+          <div class="tile-body">
+            <div class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <a href="{{ route('admin.products.create') }}" class="btn btn-primary btn-sm">Add</a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div id="sampleTable_filter" class="dataTables_filter pt-2">
+                    Showing 1 to 10 of 57 entries
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <table class="table table-hover table-bordered" id="sampleTable">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>MSRP</th>
+                        <th>Stock</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                        <td>32.99 €</td>
+                        <td>34.99 €</td>
+                        <td>61</td>
+                        <td><a href="#" class="btn btn-primary btn-sm w-100">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                        <td>32.99 €</td>
+                        <td>34.99 €</td>
+                        <td>61</td>
+                        <td><a href="#" class="btn btn-primary btn-sm w-100">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                        <td>32.99 €</td>
+                        <td>34.99 €</td>
+                        <td>61</td>
+                        <td><a href="#" class="btn btn-primary btn-sm w-100">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                        <td>32.99 €</td>
+                        <td>34.99 €</td>
+                        <td>61</td>
+                        <td><a href="#" class="btn btn-primary btn-sm w-100">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                        <td>32.99 €</td>
+                        <td>34.99 €</td>
+                        <td>61</td>
+                        <td><a href="#" class="btn btn-primary btn-sm w-100">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                        <td>32.99 €</td>
+                        <td>34.99 €</td>
+                        <td>61</td>
+                        <td><a href="#" class="btn btn-primary btn-sm w-100">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                        <td>32.99 €</td>
+                        <td>34.99 €</td>
+                        <td>61</td>
+                        <td><a href="#" class="btn btn-primary btn-sm w-100">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                        <td>32.99 €</td>
+                        <td>34.99 €</td>
+                        <td>61</td>
+                        <td><a href="#" class="btn btn-primary btn-sm w-100">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                        <td>32.99 €</td>
+                        <td>34.99 €</td>
+                        <td>61</td>
+                        <td><a href="#" class="btn btn-primary btn-sm w-100">Edit</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="paging_simple_numbers">
+                    <ul class="pagination justify-content-center">
+                      <li class="paginate_button page-item previous disabled"><a href="#" aria-controls="sampleTable"
+                          data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                      <li class="paginate_button page-item active"><a href="#" aria-controls="sampleTable"
+                          data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                      <li class="paginate_button page-item "><a href="#" aria-controls="sampleTable" data-dt-idx="2"
+                          tabindex="0" class="page-link">2</a></li>
+                      <li class="paginate_button page-item "><a href="#" aria-controls="sampleTable" data-dt-idx="3"
+                          tabindex="0" class="page-link">3</a></li>
+                      <li class="paginate_button page-item "><a href="#" aria-controls="sampleTable" data-dt-idx="4"
+                          tabindex="0" class="page-link">4</a></li>
+                      <li class="paginate_button page-item "><a href="#" aria-controls="sampleTable" data-dt-idx="5"
+                          tabindex="0" class="page-link">5</a></li>
+                      <li class="paginate_button page-item "><a href="#" aria-controls="sampleTable" data-dt-idx="6"
+                          tabindex="0" class="page-link">6</a></li>
+                      <li class="paginate_button page-item next"><a href="#" aria-controls="sampleTable" data-dt-idx="7"
+                          tabindex="0" class="page-link">Next</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Essential javascripts for application to work-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- The javascript plugin to display page loading on top-->
+  <script src="js/plugins/pace.min.js"></script>
+  <!-- Page specific javascripts-->
+</body>
+
+</html>

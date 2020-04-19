@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <a href="index.html" class="py-4">
+                <img src="https://www.neuefische.de/static/neuefische-gmbh-logo.svg" />
+            </a>
+            <a class="btn" href="cart.html">
+                Cart
+                <span class="ml-1 badge badge-dark">3</span>
+            </a>
+        </div>
+        <div class="bg-dark">
+            <div class="container d-flex justify-content-between">
+                <nav>
+                    <a class="py-2 pr-3 d-md-inline-block text-white" href="category.html">Category 1</a>
+                    <a class="py-2 pr-3 d-md-inline-block text-white" href="category.html">Category 2</a>
+                    <a class="py-2 pr-3 d-md-inline-block text-white" href="category.html">Category 3</a>
+                </nav>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" aria-label="Small"
+                            aria-describedby="inputGroup-sizing-sm" placeholder="Your query...">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-secondary btn-number">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="container mb-4">
+        <h1 class="my-5">Checkout</h1>
+        <div class="row">
+            <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    Order Summary
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">1 x Product name</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">2 x Second product</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">2 x Third item</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between text-uppercase">
+                        <strong>Total</strong>
+                        <strong>$20</strong>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Shipping Address</h4>
+                <form class="needs-validation" novalidate="">
+                    <div class="mb-3">
+                        <label for="fullName">Full name</label>
+                        <input type="text" class="form-control" name="fullName" value="">
+                        <div class="invalid-feedback">
+                            Valid Name is required.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" name="address">
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <label for="zip">Zip</label>
+                            <input type="text" class="form-control" name="zip">
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" name="city">
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <label for="country">Country</label>
+                            <select class="custom-select d-block w-100" name="country">
+                                <option value="">Choose...</option>
+                                <option>Germany</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <a href="/cart" class="btn btn-light">Back</a>
+                        <button class="btn btn-primary" type="submit">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-5 py-5 text-muted text-center text-small bg-light">
+        <p class="mb-1">© 2017-2020 neuefische GmbH</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
